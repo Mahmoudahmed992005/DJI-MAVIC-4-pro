@@ -943,36 +943,46 @@ footer h3 {
 
   .products-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .product-card {
-    padding: 0.9rem;
+    padding: 0.65rem;
+    border-radius: 14px;
+  }
+
+  .product-thumb {
+    aspect-ratio: 4 / 3;
   }
 
   .product-name {
-    font-size: 0.92rem;
-    margin: 0.75rem 0 0.3rem;
+    font-size: 0.85rem;
+    margin: 0.5rem 0 0.2rem;
   }
 
   .product-desc {
-    font-size: 0.78rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .product-price {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
   }
 
   .product-footer {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
   }
 
   .btn-add-cart {
-    width: 100%;
-    padding: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.72rem;
   }
 
   .footer-grid {
@@ -1022,5 +1032,18 @@ footer h3 {
   .avatar-ring {
     width: 44px;
     height: 44px;
+  }
+
+  .product-thumb {
+    aspect-ratio: 1 / 1;
+  }
+
+  .product-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-add-cart {
+    width: 100%;
   }
 }
